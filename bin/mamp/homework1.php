@@ -41,14 +41,14 @@ function fibonacciUpToN($current, $next, $n, &$sequence) {
     fibonacciUpToN($next, $current + $next, $n, $sequence);
 }
 
-// вывод
+// Вывод
 function fibonacciPrintUpToN($n) {
     $sequence = [];
     fibonacciUpToN(0, 1, $n, $sequence);
     echo "Числа Фибоначчи до числа <b>{$n}</b>: " . implode(', ', $sequence) . "<br>";
 }
 
-// factorial рекурсия
+// факторил рекурсивно
 function factorial($n) {
     if ($n < 0) {
         return "Введите неотрицательное число";
@@ -80,11 +80,11 @@ echo "<br>";
 
 // 2 задание
 echo '<b>Задание второе:</b>' . "<br>";
-// Вывод "Числа фибоначчи первых чисел $n рекурсивно"
+// Вывод "Числа фибоначчи первых чисел длинной $n рекурсивно"
 fibonacciPrintFirstN($n);
 
-// Вывод "фибоначчи до числа $n рекурсивно"
+// Вывод "Фибоначчи до числа $n рекурсивно"
 fibonacciPrintUpToN($n);
 
-// вывод "факторил рекурсивно"
+// вывод "Факториал рекурсивно"
 echo "Факторил числа <b>$n</b>: " . factorial($n);
