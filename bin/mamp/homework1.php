@@ -1,7 +1,10 @@
 <?php
 
 function merge(array $first, array $second) {
-    return array_merge($first, $second);
+    // Соединяем массивы
+    $merged = array_merge($first, $second);
+    // убираем лишние дубликаты(если требуется)
+    return array_unique($merged);
 }
 // first task
 $arrayFirst = [1,1,2,3,4,5];
