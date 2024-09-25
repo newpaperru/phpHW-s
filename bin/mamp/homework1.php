@@ -9,7 +9,7 @@ function merge(array $first, array $second) {
 }
 
 // ----function's for second task----
-// Числа фибоначчи первых чисел $n рекурсивно
+// Числа фибоначчи первых чисел длинной $n рекурсивно
 function fibonacci($n) {
     if ($n < 0) {
         return "Число должно быть неотрицательным";
