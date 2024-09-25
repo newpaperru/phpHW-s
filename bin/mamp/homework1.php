@@ -32,7 +32,6 @@ function fibonacciPrintFirstN($n) {
     echo "Первые числа Фибоначчи в длинной <b>{$n}</b>: " . implode(', ', $fibonacci) . '<br>';
 }
 
-
 // Фибоначчи до числа $n рекурсивно
 function fibonacciUpToN($current, $next, $n, &$sequence) {
     if ($current > $n) {
@@ -48,7 +47,6 @@ function fibonacciPrintUpToN($n) {
     fibonacciUpToN(0, 1, $n, $sequence);
     echo "Числа Фибоначчи до числа <b>{$n}</b>: " . implode(', ', $sequence) . "<br>";
 }
-
 
 // factorial рекурсия
 function factorial($n) {
@@ -72,15 +70,13 @@ $result = merge($arrayFirst, $arraySecond);
 // Для второго задания
 $n = 3;
 
-
-// ----вывод----
+// ----Вывод----
 // 1 задание
 echo '<b>Задание первое:</b>' . "<br>";
 echo 'Массив первый: ' . implode(', ', $arrayFirst) . '<br>';
 echo 'Массив второй: ' . implode(', ', $arraySecond) . '<br>';
 echo 'Результат: ' . implode(', ', $result) . '<br>';
 echo "<br>";
-
 
 // 2 задание
 echo '<b>Задание второе:</b>' . "<br>";
