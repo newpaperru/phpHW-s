@@ -10,7 +10,7 @@ function merge(array $first, array $second) {
 
 // ----function's for second task----
 // Числа фибоначчи первых чисел длинной $n рекурсивно
-function fibonacci($n) {
+function fibonacciFirstN($n) {
     if ($n < 0) {
         return "Число должно быть неотрицательным";
     } elseif ($n === 0) {
@@ -18,7 +18,7 @@ function fibonacci($n) {
     } elseif ($n === 1) {
         return 1;
     } else {
-        return fibonacci($n - 1) + fibonacci($n - 2);
+        return fibonacciFirstN($n - 1) + fibonacciFirstN($n - 2);
     }
 }
 
@@ -26,7 +26,7 @@ function fibonacci($n) {
 function fibonacciPrintFirstN($n) {
     $fibonacci = [];
     for ($i = 0; $i < $n; $i++) {
-        $fibonacci[] = fibonacci($i);
+        $fibonacci[] = fibonacciFirstN($i);
     }
 
     echo "Первые числа Фибоначчи в длинной <b>{$n}</b>: " . implode(', ', $fibonacci) . '<br>';
